@@ -7,6 +7,9 @@ views:
     order:
       - file.name
       - 문서 번호
+      - tags
     sort:
       - property: 문서 번호
         direction: ASC
+      - property: file.tags
+        direction: DESC
