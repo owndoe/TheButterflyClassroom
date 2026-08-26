@@ -4,6 +4,9 @@ views:
     filters:
       and:
         - file.folder == "TheButterflyClassroom/작가 일지/상세 설정/나비교실 인트라넷에서 확인 가능했던 ████(나비교실로 파악됨)에 대한 과거 문서"
+    groupBy:
+      property: tags
+      direction: ASC
     order:
       - file.name
       - 문서 번호
@@ -11,5 +14,9 @@ views:
     sort:
       - property: 문서 번호
         direction: ASC
+      - property: tags
+        direction: DESC
+      - property: file.name
+        direction: DESC
       - property: file.tags
         direction: DESC
